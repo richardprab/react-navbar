@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar />
+      <main className="main-content">
+        <div>
+          <h1>Welcome to GoShare</h1>
+          <p>Your delivery management platform</p>
+        </div>
+      </main>
     </div>
   );
 }
